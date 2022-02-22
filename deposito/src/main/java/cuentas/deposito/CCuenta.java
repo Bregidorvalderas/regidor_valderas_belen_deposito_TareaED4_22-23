@@ -5,8 +5,7 @@
 package cuentas.deposito;
 
 /**
- *La siguiente Clase CCuenta sirve para
- * consultar datos sobre una cuenta bancaria
+ *
  * @author Belen Regidor Valderas
  */
 public class CCuenta {
