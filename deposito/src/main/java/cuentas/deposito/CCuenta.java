@@ -1,50 +1,39 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package cuentas.deposito;
-
 /**
  *
- * @author Belen Regidor Valderas
+ * @author bregi
  */
 public class CCuenta {
-
     /**
      * @return the nombre
      */
     public String getNombre() {
         return nombre;
     }
-
     /**
      * @param nombre the nombre to set
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     /**
      * @return the cuenta
      */
     public String getCuenta() {
         return cuenta;
     }
-
     /**
      * @param cuenta the cuenta to set
      */
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
     }
-
     /**
      * @return the saldo
      */
     public double getSaldo() {
         return saldo;
     }
-
     /**
      * @param saldo the saldo to set
      */
@@ -58,36 +47,29 @@ public class CCuenta {
     public double getTipoInterés() {
         return tipoInterés;
     }
-
     /**
      * @param tipoInterés the tipoInterés to set
      */
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
     }
-    
-
     private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInterés;
-
     public CCuenta()
     {
     }
-
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
     }
-
     public double estado()
     {
         return getSaldo();
     }
-
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -104,3 +86,4 @@ public class CCuenta {
         setSaldo(getSaldo() - cantidad);
     }
 }
+
